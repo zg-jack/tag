@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:jack="http://www.dongnaoedu.com/schema/mytags"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.dongnaoedu.com/schema/mytags http://www.dongnaoedu.com/schema/mytags.xsd"
+       default-lazy-init="true">
+ 	<jack:mongo id="mongo" ip="101.200.129.112" port="27017"></jack:mongo>
+ 	<jack:redis id="redis" ip="101.200.129.112" port="6379"></jack:redis>
+</beans>  
