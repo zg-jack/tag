@@ -21,10 +21,10 @@ public class Test {
         MongoClient client = (MongoClient)app.getBean("mongo");
         System.out.println(client);
         
-        DB db = client.getDB("dn_order");
+        DB db = client.getDB("zg_order");
         DBCollection con = db.getCollection("jack");
         DBObject o = new BasicDBObject();
-        o.put("name", "bit");
+        o.put("name", "Sam");
         o.put("age", 30);
         WriteResult wr = con.insert(o);
         System.out.println(wr.toString());
